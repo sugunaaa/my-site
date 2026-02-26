@@ -20,6 +20,12 @@ const pacifico = Pacifico({
   weight: ["400"],
 });
 
+function Divider() {
+  return (
+    <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-black/15 to-transparent opacity-70" />
+  );
+}
+
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
 
@@ -124,7 +130,7 @@ export default function Home() {
 
       {/* SECTIONS */}
       <div className="relative z-10">
-        <section id="about" className="scroll-mt-24 px-6 py-20">
+        <section id="about" className="relative scroll-mt-24 px-6 py-20 pb-24">
           <div className="mx-auto max-w-3xl">
             <h2 className={`text-6xl font-bold tracking-tight text-black text-shadow-[2px_2px_0_rgba(0,0,0,0.3)] ${playfairDisplay.className}`}>About</h2>
             <p className={`mt-10 text-gray-700 leading-relaxed text-xl ${playfairDisplay.className}`}>
@@ -138,7 +144,7 @@ export default function Home() {
           <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-black/40 to-transparent opacity-100" />
         </section>
 
-        <section id="projects" className="scroll-mt-24 px-6 py-20">
+        <section id="projects" className="relative scroll-mt-24 px-6 py-20 pb-24">
           <div className="mx-auto max-w-4xl pl-12">
             <h2 className={`text-6xl font-bold tracking-tight text-black text-shadow-[2px_2px_0_rgba(0,0,0,0.3)] ${playfairDisplay.className}`}>Projects</h2>
 
@@ -169,7 +175,7 @@ export default function Home() {
           <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-black/40 to-transparent opacity-100" />
         </section>
 
-        <section id="resume" className="scroll-mt-24 px-6 py-20">
+        <section id="resume" className="relative scroll-mt-24 px-6 py-20 pb-24">
           <div className="mx-auto max-w-3xl">
             <h2 className={`text-6xl font-bold tracking-tight text-black text-shadow-[2px_2px_0_rgba(0,0,0,0.3)] ${playfairDisplay.className}`}>Resume</h2>
             <p className={`mt-10 text-gray-700 text-xl ${playfairDisplay.className}`}>
