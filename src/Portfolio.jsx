@@ -474,7 +474,7 @@ body,#root {
   border-bottom:2px solid var(--card-border);
 }
 .nav-btn {
-  width:70px;height:70px;border-radius:50%;border:2px solid var(--card-border);
+  width:60px;height:60px;border-radius:50%;border:2px solid var(--card-border);
   background:var(--card);display:flex;align-items:center;justify-content:center;
   font-size:25px;cursor:pointer;transition:all 0.3s;
   box-shadow:0 2px 8px rgba(167,139,250,0.1);
